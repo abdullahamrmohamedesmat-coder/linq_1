@@ -124,6 +124,17 @@ namespace L1
                 Console.WriteLine(result);
             }
             #endregion
+
+            #region Q12
+            string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            var results012 = Arr.OrderBy(s => s.Length).ThenBy(s => s, StringComparer.OrdinalIgnoreCase);
+
+            foreach (var result in results012)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
         }
     }
 }
