@@ -1,4 +1,6 @@
-﻿namespace L1
+﻿using static L1.Source;
+namespace L1
+
 {
     internal class Program
     {
@@ -21,6 +23,16 @@
                 Console.WriteLine(result);
             }
             #endregion
+
+            #region Q3
+            var results03 = ProductList.OrderBy(p => p.UnitPrice).Select(p => new { p.ProductName, p.UnitPrice });
+
+            foreach (var result in results03)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
+
         }
     }
 }
