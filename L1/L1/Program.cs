@@ -67,6 +67,18 @@ namespace L1
 
             #endregion
 
+            #region Q7
+            var results07 = ProductList.Select((Product, Index) => $"{Index + 1}. {Product.ProductName}");
+
+            foreach (var result in results07)
+            {
+                Console.WriteLine(result);
+            }
+            Console.WriteLine(results07.GetType());
+            #endregion
+
+           
+
         }
     }
 }
