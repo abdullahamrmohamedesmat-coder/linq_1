@@ -87,6 +87,14 @@ namespace L1
             }
             #endregion
 
+            #region Q9
+            var results09 = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(p => p.UnitsInStock).Select(p => new
+            {
+                p.ProductName,
+                p.UnitsInStock
+            });
+            #endregion
+
 
         }
     }
