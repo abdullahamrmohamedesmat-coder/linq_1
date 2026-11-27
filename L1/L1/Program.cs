@@ -13,6 +13,14 @@
                 Console.WriteLine(result);
             }
             #endregion
+
+            #region Q2
+            var results02 = Source.ProductList.Select(p => p.ProductName);
+            foreach (var result in results02)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
         }
     }
 }
