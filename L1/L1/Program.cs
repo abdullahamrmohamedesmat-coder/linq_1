@@ -135,6 +135,18 @@ namespace L1
                 Console.WriteLine(result);
             }
             #endregion
+
+            #region Q13
+            string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+            var results = digits.Where(d => d.Length > 1 && d[1] == 'i').Reverse().ToList();
+
+            var results013 = Arr.OrderBy(s => s.Length).ThenBy(s => s, StringComparer.OrdinalIgnoreCase);
+
+            foreach (var result in results013)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
         }
     }
 }
