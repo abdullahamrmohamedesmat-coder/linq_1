@@ -77,7 +77,16 @@ namespace L1
             Console.WriteLine(results07.GetType());
             #endregion
 
-           
+
+            #region Q8
+            var results08 = ProductList.OrderBy(p => p.Category).ThenByDescending(p => p.UnitPrice);
+
+            foreach (var result in results08)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
+
 
         }
     }
