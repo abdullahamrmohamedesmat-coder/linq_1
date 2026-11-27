@@ -95,6 +95,23 @@ namespace L1
             });
             #endregion
 
+            #region Q10
+            var results010 = from c in CustomerList
+                             from o in c.Orders
+                             where o.OrderDate.Year >= 1997
+                             select new
+                             {
+                                 CustomerID = c.CustomerID,
+                                 OrderDate = o.OrderDate
+                             };
+
+
+            foreach (var result in results010)
+            {
+                Console.WriteLine(result);
+            }
+
+            #endregion
 
         }
     }
