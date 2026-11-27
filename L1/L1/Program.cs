@@ -33,6 +33,16 @@ namespace L1
             }
             #endregion
 
+            #region Q4
+
+            var results04 = ProductList.Where(p => p.UnitPrice > 10 && p.UnitPrice < 30);
+            foreach (var result in results04)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
+
+
         }
     }
 }
