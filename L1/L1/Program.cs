@@ -42,6 +42,14 @@ namespace L1
             }
             #endregion
 
+            #region Q5
+            var results05 = ProductList.Where(p => p.Category == "Spices & Condiments" && p.UnitsInStock > 0);
+
+            foreach (var result in results05)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
 
         }
     }
