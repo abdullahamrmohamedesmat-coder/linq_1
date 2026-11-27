@@ -113,6 +113,17 @@ namespace L1
 
             #endregion
 
+            #region Q11
+            var results011 = ProductList.Select((Product, Index) => new {
+                postion = Index + 1,
+                Product.ProductName,
+            });
+
+            foreach (var result in results011)
+            {
+                Console.WriteLine(result);
+            }
+            #endregion
         }
     }
 }
