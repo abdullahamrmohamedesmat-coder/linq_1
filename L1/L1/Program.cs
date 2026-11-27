@@ -51,6 +51,22 @@ namespace L1
             }
             #endregion
 
+            #region Q6
+            var results06 = ProductList.Select(p => new
+            {
+                Name = p.ProductName,
+                Price = p.UnitPrice,
+                StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+
+            });
+
+            foreach (var result in results06)
+            {
+                Console.WriteLine(result);
+            }
+
+            #endregion
+
         }
     }
 }
